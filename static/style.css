@@ -4,7 +4,7 @@ html, body {
     font-family: Ubuntu, Arial;
     width: 100%;
     height: 100%;
-    background-color:#6c757d;
+    background:linear-gradient(65.15deg, #5e91d4 38.62%, #4fe7db 60.61%);
 }
 
         /* Menu lateral do meu Cabeçalho de Navegação */
@@ -101,8 +101,8 @@ section#sobre h1 {
 
 section#habilidades h1 {
     text-align: center;
-    background-color: #161623;
     margin: 0;
+    font-size: 45px;
 } 
 .Container{
     background-color: #161623;
@@ -166,6 +166,7 @@ section#habilidades h1 {
 
 Section#curriculo h2{
     text-align: center;
+    font-size: 45px;
 }
 .cv .cv-title{
     font-weight: 700;
@@ -204,6 +205,10 @@ Section#curriculo h2{
     border: 2px solid #1f5297;
     background: #fff;
     border-radius: 50%;
+}
+section#portfolio h2{
+    text-align: center;
+    font-size: 45px;
 }
 
 /* Responsividade Mobile */
@@ -249,3 +254,26 @@ i.menu-mobile {
        margin-left: 0;
    }
 }
+
+/* Animação */
+
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+   }
+   [data-anime="down"] {
+    transform: translate3d(0, -100%, 0);
+   }
+   [data-anime="up"] {
+       transform: translate3d(0, 100%, 0);
+   }
+   [data-anime="left"] {
+       transform: translate3d(-100%, 0, 0);
+   }
+   [data-anime="right"] {
+       transform: translate3d(50px ,0 ,0);
+   }
+   [data-anime].animate {
+       opacity: 1;
+       transform: translate3d(0 ,0 ,0);
+   }
