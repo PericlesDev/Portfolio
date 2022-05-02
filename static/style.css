@@ -62,7 +62,7 @@ html, body {
 .nav-menu a i, .nav-menu a:focus i{ /* estilização do Menu de Navegação */
     font-size: 24px;
     padding-right: 0.8rem;
-    color: #6f7180;
+    color: #8E5D52;
 }
 .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a{
     text-decoration: none;
@@ -91,6 +91,13 @@ section#inicio span#subtitle{
     margin-right: 8rem;
     font-size: 1.5rem;
     text-shadow: 4px 4px 10px #000000;
+}
+button.botao{
+ font-size: 30px;
+ background:#161644;   
+}
+button.botao a{
+    text-decoration:none;
 }
 
 section#sobre h1 {
@@ -211,6 +218,8 @@ section#portfolio h2{
     font-size: 45px;
 }
 
+
+
 /* Responsividade Mobile */
 
 i.menu-mobile {
@@ -225,7 +234,7 @@ i.menu-mobile {
     z-index: 10;
     width: 45px;
     height: 45px;
-    display: flex;
+    display: none; /*esconde o menu-mobile */
     justify-content: center;
     align-items: center;
     
