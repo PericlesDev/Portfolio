@@ -45,3 +45,19 @@ animeScroll();
 window.addEventListener("scroll", ()=>{
          animeScroll();
 })
+
+// Ativar carregamento do botão enviar no Formulário
+
+const btnEnviar = document.querySelector('#btn-enviar')
+const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
+
+btnEnviar.addEventListener("click", ()=>{
+    btnEnviarLoader.style.display = "block";
+    btnEnviar.style.display = "none"
+});
+
+//Alerta de mensagem sumindo
+
+setTimeout(() => {
+    document.querySelector('#alerta').style.display = 'none';
+}, 5000)

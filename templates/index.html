@@ -102,7 +102,7 @@
 
     <section class="mt-5 section-bg" id="habilidades">
       <h1 class='pt-3'>Habilidades</h1>
-      <div class="Container">
+      <div class="Container" data-anime="down">
         <div class="card">
         <div class="content">
         <h2><img src="https://img.icons8.com/color/95/000000/html-5--v1.png"/></h2>
@@ -150,37 +150,36 @@
     <div class="container pb-5">
       <h2 class="pt-3 pb-4">Currículo</h2>
 
-          <div class="row">
+          <div class="row" data-anime="down">
             <div class="col-md-6">
              <h3 class='cv-title'>Estudos</h3>
             
 
             <div class='cv-item'>
             <h4>Bootcamp Carrefour Full.Stack | DIO</h4>
-            <h5>2022 - 2022</h5>
+            <h5>Abril - 2022</h5>
             <p><em>Instituto Mauá Tecnológico</em></p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, aspernatur. Est, nemo corrupti iure
             quaerat aut similique. Nemo, doloribus vel.</p>
             </div>
 
             <div class='cv-item'>
-              <h4>Bootcamp Carrefour Full.Stack | DIO</h4>
-              <h5>2022 - 2022</h5>
+              <h4>Semana Spring React | DevSuperior</h4>
+              <h5>Abril - 2022</h5>
               <p><em>Instituto Mauá Tecnológico</em></p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, aspernatur. Est, nemo corrupti iure
-              quaerat aut similique. Nemo, doloribus vel.</p>
+              <p>desenvolvimento e implantação de um web site com uma API de filmes online</p>
               </div>
 
             <div class='cv-item'>
-              <h4>Bootcamp Carrefour Full.Stack | DIO</h4>
-              <h5>2022 - 2022</h5>
+              <h4>Do Zero ao Código | KenzieAcademy</h4>
+              <h5>Agosto - 2021</h5>
               <p><em>Instituto Mauá Tecnológico</em></p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, aspernatur. Est, nemo corrupti iure
               quaerat aut similique. Nemo, doloribus vel.</p>
               </div>
 
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-anime="down">
               <h3 class='cv-title'>Certificados</h3>
             
 
@@ -217,11 +216,11 @@
    </section>
 
    <section id="portfolio" class="section-bg-mt-5-">
-    <div class="container pb-5 pt-5 bg-transparent" data-anime="left">
+    <div class="container pb-5 pt-5 bg-transparent">
 
         <h2 class="pb-4">Portfólio</h2>
 
-        <div id="carouselPortfolio" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div id="carouselPortfolio" class="carousel carousel-dark slide" data-bs-ride="carousel" data-anime="left">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -241,6 +240,9 @@
                                     <p class="card-text">Projeto fullstack criado com MySQL, Spring e Angular,
                                         acesso restrito, apenas pessoas autorizadas</p>
                                     <div class="d-flex justify-content-center">
+                                    <a href="https://github.com/codethi/blogPessoal-front-back"target='_blank'
+                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                                      
                                         <a href="http://generationbrasil.online/#/login" target='_blank'
                                             class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
                                     </div>
@@ -350,20 +352,73 @@
                 </div>
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            
         </div>
 
     </div>
    </section>
+  
+      <section class="pt-5 pb-5" id="contato">
+        
+         <div class="container mb-5">
+           <h2 class='pt-3 pb-3'>Contato</h2>
+
+           
+
+             <div class="col-md-12 mt-5 mt-md-0" data-anime="up">
+  <div class="card pt-5 h-100 shadow --bs-teal">
+
+                <form class="row g-3" action='/send' method="POST">
+                  <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name='nome'
+                    placeholder='Digite seu nome' required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="text" class="form-control" id="email" name='email'
+                    placeholder='Digite seu email' required>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="mensagem" class="form-label">Mensagem
+                    </label>
+
+                    <textarea type="text" class="form-control" id="mensagem" name='mensagem' rows="10"
+                          placeholder="Digite sua mensagem" required></textarea>
+                  </div>
+                    
+                  <div class="col-12 d-flex justify-content-center mt-4">
+                    <button id="btn-enviar" type="submit" class="btn btn-success">Enviar mensagem</button>
+
+                    <button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                      Enviando...
+                    </button>
+                  </div>
+
+                </form>
+
+
+              </div>
+             
+            </div>
+
+           </div>
+
+         </div>
+      </section>
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      {% for message in messages %}
+      <div id="alerta" class="alert alert-ranger alert-dismissible fade show" role="alert">
+        <i class="bi bi-check-circle-fill"></i> {{mesage}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% endwith %}
 </main>
   
               <!--Biblioteca do JavaScript-->
