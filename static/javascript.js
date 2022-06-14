@@ -53,11 +53,12 @@ const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
 
 btnEnviar.addEventListener("click", ()=>{
     btnEnviarLoader.style.display = "block";
-    btnEnviar.style.display = "none"
-});
+  btnEnviar.style.display = "none"
+})
 
 //Alerta de mensagem sumindo
 
 setTimeout(() => {
     document.querySelector('#alerta').style.display = 'none';
 }, 5000)
+
