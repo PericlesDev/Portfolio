@@ -93,8 +93,9 @@ section#inicio span#subtitle{
     text-shadow: 4px 4px 10px #000000;
 }
 button.botao{ /* Download curriculo */
- font-size: 30px;
- background:#2F2325;   
+ font-size: 35px;
+ background:#2F2325;
+ border-radius: 50px;
 }
 button.botao a{
     text-decoration: none;
@@ -227,32 +228,6 @@ section#portfolio h2{
     text-align: center;
     font-size: 45px;
 }
-
-/* Área de Enviar Email-Contato */
-section#contato h2{
-    text-align: center;
-}
-.form-label { /* nome,email,mensagem */
-    
-}
-.form-control {
-    box-shadow: 0 .5rem 1rem rgba(0,0,0.1);
-    
-}
-.row .form-label {
-    text-indent: 0.6em;
-}
-#btn-enviar-loader{
-    display: none;
-}
-#alerta{
-    position: fixed;
-    z-index: 10;
-    top: 30px;
-    right: 30px; 
-}
-
-
 
 /* Responsividade Mobile */
 

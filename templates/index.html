@@ -59,12 +59,6 @@
         aria-hidden="true"></i>Portifólio</a>
           </li>
 
-        <li class="nav-item">
-        <a class="nav-link" href="#contato"><i class="bi bi-envelope"
-        aria-hidden="true"></i>Contato</a>
-          </li>
-
-          </ul>
      </nav>
     </section>
 </aside>
@@ -75,7 +69,9 @@
       <div class="col-md-5 d-flex justify-content-center align-items-center flex-column">
         <h2 class="text-white text-shadow">Péricles Santos</h2>
         <span id="subtitle" class="text-white text-shadow">Web Desenvolvedor Front-end Junior</span>
+
       </div>
+      
     </section>
 
     <section class="container mt-5" id='sobre'>
@@ -96,6 +92,7 @@
          Histórias-quais me fizeram estar presente durante início, meio e fim no processo de aprendizado de cada uma delas
          Hoje como Junior consigo ver meu papel na construção de uma sociedade melhor pela qual eu estarei tão perto de conhecer</p>
        <button class="botao"><a href="../static/Currículo - Front-end Péricles.pdf" download="PériclesCV" type="apllication/pdf">Download CV</a></button>
+
       </div>
       </div>
     </section>
@@ -216,225 +213,233 @@
 
    <section id="portfolio" class="section-bg-mt-5-">
     <div class="container pb-5 pt-5 bg-transparent">
+ 
+         <h2 class="pb-4">Portfólio</h2>
+ 
+         <div id="carouselPortfolio" class="carousel carousel-dark slide" data-bs-ride="carousel" data-anime="up">
+ 
+             <div class="carousel-indicators">
+ 
+                 <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active"
+                     aria-current="true" aria-label="Slide 1"></button>
+ 
+                 <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1"
+                     aria-label="Slide 2"></button>
+             </div>
 
-        <h2 class="pb-4">Portfólio</h2>
 
-        <div id="carouselPortfolio" class="carousel carousel-dark slide" data-bs-ride="carousel" data-anime="left">
+             <div class="carousel-inner">
 
-            <div class="carousel-indicators">
+              <div class="carousel-item active">
 
-                <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
 
-                <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-            </div>
+                      <div class="col">
 
-            <div class="carousel-inner">
+                          <div class="card">
 
-                <div class="carousel-item active" data-bs-interval="10000">
+                              <img src="../static/img/Card.png" class="card-img-top" alt="Google Glass">
 
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                              <div class="card-body">
 
-                        <div class="col">
+                                  <h5 class="card-title">Tela de login Natalino</h5>
 
-                            <div class="card">
+                                  <p class="card-text">Projeto Landing Page desenvolvido para o lançamento do Óculos de
+                                  Inteligencia Artificial, com uma parceria Google.</p>
 
-                                <img src="../static/img/Login Screen.png" class="card-img-top"
-                                    alt="Google Glass">
+                                  <div class="d-flex justify-content-center">
 
-                                <div class="card-body">
+                                  <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Christmas-Login-Screen"target='_blank'
+                                  class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+                                    
+                                      <a href="https://periclesdev-login-screen-christmas.netlify.app/" target='_blank'
+                                          class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
 
-                                    <h5 class="card-title">Tela de login Natalino</h5>
-
-                                    <p class="card-text">Projeto Landing Page desenvolvido para o lançamento do Óculos de
-                                    Inteligencia Artificial, com uma parceria Google.</p>
-
-                                    <div class="d-flex justify-content-center">
-
-                                    <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Christmas-Login-Screen"target='_blank'
-                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
-                                      
-                                        <a href="https://periclesdev-login-screen-christmas.netlify.app/" target='_blank'
-                                            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="../static/img/Hamburguer.png" class="card-img-top img-fluid w-100"
-                                    alt="E-Commerce Hamburgueria">
-                                <div class="card-body">
-                                    <h5 class="card-title">E-Commerce de Hamburgueria</h5>
-                                    <p class="card-text">Projeto criado com HTML, CSS e JavaScript,
-                                        deploy realizado Netlify</p>
-                                    <div class="d-flex justify-content-center">
-                                    <abbr title="Repositório do Projeto"><a href="https://github.com/codethi/blogPessoal-front-back"
-                                            target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
-                                        <a href="https://newbloggen.netlify.app/#/login" target='_blank'
-                                            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="../static/img/Login Screen.png" class="card-img-top img-fluid w-100"
-                                    alt="Merry Christhimas - Login Screen">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tela de Login - Tema Natal</h5>
-                                    <p class="card-text">Projeto fullstack criado com PostegreSQL, Flask, HTML,
-                                        CSS e JavaScript, deploy realizado no Heroku</p>
-                                    <div class="d-flex justify-content-center">
-                                      <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Christmas-Login-Screen" target='_blank'
-                                            class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
-                                        <a href="https://pokedex-thicode.herokuapp.com/" target='_blank'
-                                            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
-                                    </div>
+                      <div class="col">
+                        <div class="card">
+                            <img src="../static/img/Parallax.png" class="card-img-top img-fluid w-100"
+                                alt="E-Commerce Hamburgueria">
+                            <div class="card-body">
+                                <h5 class="card-title">E-Commerce de Hamburgueria</h5>
+                                <p class="card-text">Projeto criado com HTML, CSS e JavaScript,
+                                    deploy realizado Netlify</p>
+                                <div class="d-flex justify-content-center">
+                                <abbr title="Repositório do Projeto"><a href="https://github.com/codethi/blogPessoal-front-back"
+                                        target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+                                    <a href="https://newbloggen.netlify.app/#/login" target='_blank'
+                                        class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-
-                <div class="carousel-item" data-bs-interval="2000">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="../static/img/dsMovie.png" class="card-img-top img-fluid w-100"
-                                    alt="dsMovie">
-                                <div class="card-body">
-                                    <h5 class="card-title">DsMovie filmes e séries</h5>
-                                    <p class="card-text">Projeto fullstack criado com SQLite, Flask, HTML, CSS e
-                                        JavaScript,
-                                        deploy realizado no Heroku</p>
-                                    <div class="d-flex justify-content-center">
-                                    <abbr title="Repositório do Projeto"><a href="https://github.com/codethi/BlueMusicV2" target='_blank'
-                                            class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
-                                        <a href="https://appbluemusic.herokuapp.com/" target='_blank'
-                                            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
-                                    </div>
-
+                    <div class="col">
+                      <div class="card">
+                          <img src="../static/img/Calculadora.png" class="card-img-top img-fluid w-100"
+                              alt="Merry Christhimas - Login Screen">
+                          <div class="card-body">
+                              <h5 class="card-title">Tela de Login - Tema Natal</h5>
+                              <p class="card-text">Projeto fullstack criado com PostegreSQL, Flask, HTML,
+                                  CSS e JavaScript, deploy realizado no Heroku</p>
+                              <div class="d-flex justify-content-center">
+                                <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Christmas-Login-Screen" target='_blank'
+                                      class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+                                  <a href="https://pokedex-thicode.herokuapp.com/" target='_blank'
+                                      class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="../static/img/Parallax.png" class="card-img-top img-fluid w-100"
-                                    alt="Parallax Halloween">
-                                <div class="card-body">
-                                    <h5 class="card-title">Parallax - Tema Halloween</h5>
-                                    <p class="card-text">Projeto front-end criado com HTML, CSS, Bootstrap e
-                                        JavaScript,
-                                        deploy realizado no Netlify</p>
-                                    <div class="d-flex justify-content-center">
-                                    <abbr title="Repositório do Projeto"><a href="https://github.com/codethi/cronometro-intervalo"
-                                            target='_blank' class="btn btn-outline-dark me-3"><i
-                                                class="bi bi-github"></i></a></abbr>
-                                        <a href="https://timer-break.netlify.app/" target='_blank'
-                                            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="../static/img/Calculadora.png" class="card-img-top img-fluid w-100"
-                                    alt="Calculadora">
-                                <div class="card-body">
-                                    <h5 class="card-title">Calculadora</h5>
-                                    <p class="card-text">Projeto front-end criado com HTML, CSS, Bootstrap e
-                                        JavaScript,
-                                        deploy realizado no Netlify</p>
-                                    <div class="d-flex justify-content-center">
-                                       <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Calculadora" target='_blank'
-                                            class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr> 
-                                        <a href="https://thicode.netlify.app/" target='_blank'
-                                            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            
-        </div>
-
-    </div>
-   </section>
+                             </div>
+                       </div>                              
+                  </div>
 
 
 
-      <section class="pt-5 pb-5" id="contato">
+                      <div class="carousel-inner">
+
+                        <div class="carousel-item active">
         
-         <div class="container mb-5">
-           <h2 class='pt-3 pb-3'>Contato</h2>
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+                                <div class="col">
+        
+                                    <div class="card">
+        
+                                        <img src="../static/img/Tenis.png" class="card-img-top"
+                                            alt="Google Glass">
+        
+                                        <div class="card-body">
+        
+                                            <h5 class="card-title">Tela de login Natalino</h5>
+        
+                                            <p class="card-text">Projeto Landing Page desenvolvido para o lançamento do Óculos de
+                                            Inteligencia Artificial, com uma parceria Google.</p>
+        
+                                            <div class="d-flex justify-content-center">
+        
+                                            <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Christmas-Login-Screen"target='_blank'
+                                            class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+                                              
+                                                <a href="https://periclesdev-login-screen-christmas.netlify.app/" target='_blank'
+                                                    class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card">
+                                      <img src="../static/img/Hamburguer.png" class="card-img-top img-fluid w-100"
+                                          alt="E-Commerce Hamburgueria">
+                                      <div class="card-body">
+                                          <h5 class="card-title">E-Commerce de Hamburgueria</h5>
+                                          <p class="card-text">Projeto criado com HTML, CSS e JavaScript,
+                                              deploy realizado Netlify</p>
+                                          <div class="d-flex justify-content-center">
+                                          <abbr title="Repositório do Projeto"><a href="https://github.com/codethi/blogPessoal-front-back"
+                                                  target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+                                              <a href="https://newbloggen.netlify.app/#/login" target='_blank'
+                                                  class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card">
+                                      <img src="../static/img/Login Screen.png" class="card-img-top img-fluid w-100"
+                                          alt="Merry Christhimas - Login Screen">
+                                      <div class="card-body">
+                                          <h5 class="card-title">Tela de Login - Tema Natal</h5>
+                                          <p class="card-text">Projeto fullstack criado com PostegreSQL, Flask, HTML,
+                                              CSS e JavaScript, deploy realizado no Heroku</p>
+                                          <div class="d-flex justify-content-center">
+                                            <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Christmas-Login-Screen" target='_blank'
+                                                  class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+                                              <a href="https://pokedex-thicode.herokuapp.com/" target='_blank'
+                                                  class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                         </div>
+                                   </div>                              
+                              </div>
 
-           
-
-             <div class="col-md-12 mt-5 mt-md-0" data-anime="up">
-  <div class="card pt-5 h-100 shadow --bs-teal">
-
-                <form class="row g-3" action='/send' method="POST">
-                  <div class="col-md-6">
-                    <label for="nome" class="form-label">Nome:</label>
-                    <input type="text" class="form-control" id="nome" name='nome'
-                    placeholder='Digite seu nome' required>
-                  </div>
-
-                  <div class="col-md-6">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="text" class="form-control" id="email" name='email'
-                    placeholder='Digite seu email' required>
-                  </div>
-
-                  <div class="col-12">
-                    <label for="mensagem" class="form-label">Mensagem
-                    </label>
-
-                    <textarea type="text" class="form-control" id="mensagem" name='mensagem' rows="10"
-                          placeholder="Digite sua mensagem" required></textarea>
-                  </div>
-                    
-                  <div class="col-12 d-flex justify-content-center mt-4">
-                    <button id="btn-enviar" type="submit" class="btn btn-success">Enviar mensagem</button>
-
-                    <button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
-                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                      Enviando...
-                    </button>
-                  </div>
-
-                </form>
 
 
-              </div>
-             
-            </div>
+                              <div class="carousel-inner">
 
-           </div>
+                                <div class="carousel-item active" data-anime="right">
+                
+                                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                
+                                        <div class="col">
+                
+                                            <div class="card">
+                
+                                                <img src="../static/img/Calendário.png" class="card-img-top"
+                                                    alt="Google Glass">
+                
+                                                <div class="card-body">
+                
+                                                    <h5 class="card-title">Tela de login Natalino</h5>
+                
+                                                    <p class="card-text">Projeto Landing Page desenvolvido para o lançamento do Óculos de
+                                                    Inteligencia Artificial, com uma parceria Google.</p>
+                
+                                                    <div class="d-flex justify-content-center">
+                
+                                                    <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Christmas-Login-Screen"target='_blank'
+                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+                                                      
+                                                        <a href="https://periclesdev-login-screen-christmas.netlify.app/" target='_blank'
+                                                            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="card">
+                                              <img src="../static/img/Hamburguer.png" class="card-img-top img-fluid w-100"
+                                                  alt="E-Commerce Hamburgueria">
+                                              <div class="card-body">
+                                                  <h5 class="card-title">E-Commerce de Hamburgueria</h5>
+                                                  <p class="card-text">Projeto criado com HTML, CSS e JavaScript,
+                                                      deploy realizado Netlify</p>
+                                                  <div class="d-flex justify-content-center">
+                                                  <abbr title="Repositório do Projeto"><a href="https://github.com/codethi/blogPessoal-front-back"
+                                                          target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+                                                      <a href="https://newbloggen.netlify.app/#/login" target='_blank'
+                                                          class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
 
-         </div>
-      </section>
-    
-    <!--Script de envio do Formulário --> 
+                                      <div class="col">
+                                        <div class="card">
+                                            <img src="../static/img/dsMovie.png" class="card-img-top img-fluid w-100"
+                                                alt="Merry Christhimas - Login Screen">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tela de Login - Tema Natal</h5>
+                                                <p class="card-text">Projeto fullstack criado com PostegreSQL, Flask, HTML,
+                                                    CSS e JavaScript, deploy realizado no Heroku</p>
+                                                <div class="d-flex justify-content-center">
+                                                  <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Christmas-Login-Screen" target='_blank'
+                                                        class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+                                                    <a href="https://pokedex-thicode.herokuapp.com/" target='_blank'
+                                                        class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                                  </div>
+                                               </div>
+                                         </div>                              
+                                    </div>
 
-      <!-- {% with messages = get_flashed_messages() %}
-      {% if messages %}
-      {% for message in messages %} -->
-      <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
-        <i class="bi bi-check-circle-fill">Mensagem enviada!</i>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
-    <!-- {% endfor %}
-      {% endif %}
-      {% endwith %} -->
+
+
+
+
+
+
+
+   
 </main>
   
               <!--Biblioteca do JavaScript-->
