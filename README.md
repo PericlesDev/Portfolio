@@ -12,6 +12,7 @@ Péricles dos Santos | Web Desenvolvedor de Softwares | Front-end | Junior
 ✔️JavaScript <br>
 ✔️Bootstrap <br>
 ✔️Jquery <br>
+✔️Flask <br>
 ✔️Vanilla-tilt.js <br>
 ✔️ScrollReveal <br>
 ✔️Anime.js<br>
