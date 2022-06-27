@@ -91,8 +91,8 @@
        </div>
        <div class="col-md-8" data-anime="up">
         <h2 class='pt-3'>Hobby</h2>
-        <p>Eu, developer Péricles. 
-         Desenvolvi este portfólio com histórias.
+        <p>Eu, desenvolvedor Péricles. 
+         complementei este portfólio com histórias.
          Histórias-quais me fizeram estar presente durante início, meio e fim no processo de aprendizado de cada uma delas
          Hoje como Junior consigo ver meu papel na construção de uma sociedade melhor pela qual eu estarei tão perto de conhecer</p>
        <button class="botao"><a href="../static/Currículo - Front-end Péricles.pdf" download="PériclesCV" type="apllication/pdf">Download CV</a></button>
@@ -220,29 +220,42 @@
         <h2 class="pb-4">Portfólio</h2>
 
         <div id="carouselPortfolio" class="carousel carousel-dark slide" data-bs-ride="carousel" data-anime="left">
+
             <div class="carousel-indicators">
+
                 <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
+
                 <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
             </div>
+
             <div class="carousel-inner">
+
                 <div class="carousel-item active" data-bs-interval="10000">
 
                     <div class="row row-cols-1 row-cols-md-3 g-4">
+
                         <div class="col">
+
                             <div class="card">
-                                <img src="../static/img/Google Glass.png" class="card-img-top"
+
+                                <img src="../static/img/Login Screen.png" class="card-img-top"
                                     alt="Google Glass">
+
                                 <div class="card-body">
-                                    <h5 class="card-title">Website Google Glass</h5>
+
+                                    <h5 class="card-title">Tela de login Natalino</h5>
+
                                     <p class="card-text">Projeto Landing Page desenvolvido para o lançamento do Óculos de
                                     Inteligencia Artificial, com uma parceria Google.</p>
+
                                     <div class="d-flex justify-content-center">
-                                    <abbr title="Repositório do Projeto"><a href="https://github.com/codethi/blogPessoal-front-back"target='_blank'
+
+                                    <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Christmas-Login-Screen"target='_blank'
                                     class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
                                       
-                                        <a href="http://generationbrasil.online/#/login" target='_blank'
+                                        <a href="https://periclesdev-login-screen-christmas.netlify.app/" target='_blank'
                                             class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
                                     </div>
                                 </div>
@@ -254,8 +267,8 @@
                                     alt="E-Commerce Hamburgueria">
                                 <div class="card-body">
                                     <h5 class="card-title">E-Commerce de Hamburgueria</h5>
-                                    <p class="card-text">Projeto fullstack criado com MySQL, Spring e Angular,
-                                        deploy realizado no Heroku e no Netlify</p>
+                                    <p class="card-text">Projeto criado com HTML, CSS e JavaScript,
+                                        deploy realizado Netlify</p>
                                     <div class="d-flex justify-content-center">
                                     <abbr title="Repositório do Projeto"><a href="https://github.com/codethi/blogPessoal-front-back"
                                             target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
@@ -274,7 +287,7 @@
                                     <p class="card-text">Projeto fullstack criado com PostegreSQL, Flask, HTML,
                                         CSS e JavaScript, deploy realizado no Heroku</p>
                                     <div class="d-flex justify-content-center">
-                                      <abbr title="Repositório do Projeto"><a href="https://github.com/codethi/pokedex-flask" target='_blank'
+                                      <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Christmas-Login-Screen" target='_blank'
                                             class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
                                         <a href="https://pokedex-thicode.herokuapp.com/" target='_blank'
                                             class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
@@ -337,7 +350,7 @@
                                         JavaScript,
                                         deploy realizado no Netlify</p>
                                     <div class="d-flex justify-content-center">
-                                       <abbr title="Repositório do Projeto"><a href="https://github.com/codethi/thi.code" target='_blank'
+                                       <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Calculadora" target='_blank'
                                             class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr> 
                                         <a href="https://thicode.netlify.app/" target='_blank'
                                             class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
@@ -355,7 +368,9 @@
 
     </div>
    </section>
-  
+
+
+
       <section class="pt-5 pb-5" id="contato">
         
          <div class="container mb-5">
@@ -407,16 +422,19 @@
 
          </div>
       </section>
-      {% with messages = get_flashed_messages() %}
+    
+    <!--Script de envio do Formulário --> 
+
+      <!-- {% with messages = get_flashed_messages() %}
       {% if messages %}
-      {% for message in messages %}
+      {% for message in messages %} -->
       <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
         <i class="bi bi-check-circle-fill">Mensagem enviada!</i>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
-      {% endfor %}
+    <!-- {% endfor %}
       {% endif %}
-      {% endwith %}
+      {% endwith %} -->
 </main>
   
               <!--Biblioteca do JavaScript-->

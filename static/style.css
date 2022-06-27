@@ -92,12 +92,13 @@ section#inicio span#subtitle{
     font-size: 1.5rem;
     text-shadow: 4px 4px 10px #000000;
 }
-button.botao{
+button.botao{ /* Download curriculo */
  font-size: 30px;
- background:#161644;   
+ background:#2F2325;   
 }
 button.botao a{
-    text-decoration:none;
+    text-decoration: none;
+    
 }
 
 section#sobre h1 {
@@ -185,7 +186,7 @@ Section#curriculo h2{
 .cv .cv-item{
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid #1f5297;
+    border-left: 2px solid #2F2325;
     position: relative;
 }
 .cv .cv-item h4{
