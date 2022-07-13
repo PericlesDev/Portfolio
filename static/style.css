@@ -13,19 +13,16 @@ html, body {
     top: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient(68.15deg, #5e91d4 16.62%, #4fe7db 85.61%);
+    background-color: #493d3f;
     overflow-y: auto;
     width: 300px;
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
     z-index: 9997;
 }
-#header .profile img{
-    margin: 15px auto;
-    display: block;
-    width: 120px;
-    border: 8px solid #2F2325;
-    border-radius: 50%;
+#header .profile img {
+    width: 180px;
+      
 }
  #header .profile h1{  
      font-size: 24px;
@@ -75,7 +72,7 @@ html, body {
     margin-left: 300px;
 }
 section#inicio{
-    background-image: url("./img/Linkedin-image.png");
+    background-image: url("./img/pexels-shvets-production-8929323.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -94,11 +91,14 @@ section#inicio span#subtitle{
 }
 button.botao{ /* Download curriculo */
  font-size: 35px;
- background:#2F2325;
+ background: #bacdda;
  border-radius: 50px;
+ cursor: pointer;
 }
 button.botao a{
     text-decoration: none;
+    font-style: #161623;
+    
     
 }
 
@@ -109,9 +109,12 @@ section#sobre h1 {
       /* Começo de área "Habilidades" */
 
 section#habilidades h1 {
-    text-align: center;
+    text-align: center; 
     margin: 0;
     font-size: 45px;
+    position: relative;
+    top: -10px;
+
 } 
 .Container{
     background-color: #161623;
@@ -228,6 +231,9 @@ section#portfolio h2{
     text-align: center;
     font-size: 45px;
 }
+section#portfolio h5 {
+    text-align: center;
+}
 
 /* Responsividade Mobile */
 
@@ -271,6 +277,21 @@ i.menu-mobile {
    #main {
        margin-left: 0;
    }
+}
+
+
+@media(max-width: 390px) {
+
+    section#inicio {
+        background-image: url("./img/pexels-nothing-ahead-8102156.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+       
+    }
 }
 
 /* Animação */
