@@ -18,7 +18,7 @@
 
 <aside id='header'>
 <section class="profile">
-<img src="img/Violinista.png" hspace="50px" alt="Foto do Péricles">
+<img src="img/Violinista.png" hspace="49px" alt="Foto do Péricles">
 <h1>Péricles dos Santos</h1>
 
 <div class="social-links mt-4 text-center">
@@ -36,56 +36,82 @@
     <ul class="nav flex-column">
     <li class="nav-item">
         <a class="nav-link" aria-current="page" aria-current="page"
-        href="#inicio"><i class="bi bi-house-fill" aria-hidden="true"></i>Inicio</a>
-          </li>
+        href="#inicio"><i class="bi bi-house-fill" aria-hidden="true"></i><div onclick="document.getElementById('player').play()">Inicio</div> 
+        <audio id="player">
+          <source src="audios/Inicio.mp3" type="audio/mp3" />
+        </audio>
+      
+      </a>
+      </li>
 
         <li class="nav-item">
         <a class="nav-link" href="#sobre"><i class="bi bi-person-fill"
-        aria-hidden="true"></i>Sobre</a>
-          </li>
+        aria-hidden="true"></i><div onclick="document.getElementById('player2').play()">Sobre</div> 
+        <audio id="player2">
+          <source src="audios/Sobre.mp3" type="audio/mp3" />
+        </audio>
+      
+      </a>
+      </li>
 
         <li class="nav-item">
         <a class="nav-link" href="#habilidades"><i class="bi bi-list-check"
-        aria-hidden="true"></i>Habilidades</a>
-          </li>
+        aria-hidden="true"></i><div onclick="document.getElementById('player3').play()">Habilidades</div> 
+        <audio id="player3">
+          <source src="audios/Habilidades.mp3" type="audio/mp3" />
+        </audio>
+    
+      </a>
+      </li>
 
         <li class="nav-item">
         <a class="nav-link" href="#curriculo"><i class="bi bi-file-earmark"
-        aria-hidden="true"></i>Curriculo</a>
-          </li>
+        aria-hidden="true"></i><div onclick="document.getElementById('player4').play()">Currículo</div> 
+        <audio id="player4">
+          <source src="audios/Currículo.mp3" type="audio/mp3" />
+        </audio>
+      
+      </a>
+      </li>
 
         <li class="nav-item">
         <a class="nav-link" href="#portfolio"><i class="bi bi-collection"
-        aria-hidden="true"></i>Portfólio</a>
-          </li>
+        aria-hidden="true"></i><div onclick="document.getElementById('player5').play()">Portfólio</div> 
+        <audio id="player5">
+          <source src="audios/Portfólio.mp3" type="audio/mp3" />
+        </audio>
+ 
+      </a>
+      </li>
 
      </nav>
     </section>
 </aside>
 
+   <!--Conteúdo inicial do meu Portfólio-->
+
    <main id="main">
     
     <section id="inicio" class="row m-0 p-0">
-      <div class="col-md-5 d-flex justify-content-center align-items-center flex-column">
-        <h2 class="text-white text-shadow">Péricles Santos</h2>
+    <div class="col-md-5 d-flex justify-content-center align-items-center flex-column">
+      <h2 class="text-white text-shadow">Péricles Santos</h2>
         <span id="subtitle" class="text-white text-shadow">Desenvolvedor Web Front-end</span>
-
-      </div>
-      
+    </div>     
     </section>
 
     <section class="container mt-5" id='sobre'>
       <div class="row w-100">
         <div class="cool-md-12">
-      <h1 class='pt-3'>Sobre</h1>          
-    </div>
-  </div>
-   <div class="row mt-4">
+          <h1 class='pt-3'>Sobre</h1>        
+      </div>
+        </div>
+
+
+    <div class="row mt-4">
      <div class="col-md-3">
-       <img class="img-fluid shadow" src="img/Péricles.jpeg"
-       alt="Foto do Péricles">
+       <img class="img-fluid shadow" src="img/Péricles.jpeg"alt="Foto do Péricles">
        </div>
-       <div class="col-md-8">
+        <div class="col-md-8">
         <h2 class='pt-3'>Rio Grande da Serra - SP</h2>
         <p>Olá, eu me chamo Péricles.<br>
         Sou Desenvolvedor Web Front-end com 2 anos de experiencia.<br><hr>
@@ -93,10 +119,11 @@
         Desafios que me impulsionem á trabalhar cada vez mais os meus objetivos, e que me aproxima de uma evolução pessoal e profissional.
         <br>Gratidão!
          </p>
-
       </div>
       </div>
     </section>
+
+
 
     <section class="mt-5 section-bg" id="habilidades">
       <h1 class='pt-3'>Habilidades</h1>
@@ -104,6 +131,10 @@
         <div class="card">
         <div class="content">
         <h2><img src="https://img.icons8.com/color/95/000000/html-5--v1.png"/></h2>
+        <button onclick="document.getElementById('player6').play()">Clique aqui</button>
+        <audio id="player6">
+          <source src="audios/HTML5.mp3" type="audio/mp3" />
+        </audio>
         <h3>HTML5</h3>
         
         </p>
@@ -112,6 +143,10 @@
       <div class="card">
         <div class="content">
         <h2><img src="https://img.icons8.com/color/95/000000/css3.png"/></h2>
+        <button onclick="document.getElementById('player7').play()">Clique aqui</button>
+        <audio id="player7">
+        <source src="audios/CSS3.mp3" type="audio/mp3" />
+        </audio>
         <h3>CSS3</h3>
       
         </div>
@@ -119,6 +154,10 @@
       <div class="card">
         <div class="content">
         <h2><img src="https://img.icons8.com/ios-filled/100/f1c40f/javascript-logo.png"/></h2>
+        <button onclick="document.getElementById('player8').play()">Clique aqui</button>
+        <audio id="player8">
+        <source src="audios/JavaScript.mp3" type="audio/mp3" />
+        </audio>
         <h3>Javascript</h3>
         
         </div>
@@ -126,6 +165,10 @@
       <div class="card">
         <div class="content">
         <h2><img src="https://img.icons8.com/office/100/000000/react.png"/></h2>
+        <button onclick="document.getElementById('player9').play()">Clique aqui</button>
+        <audio id="player9">
+        <source src="audios/ReactJS.mp3" type="audio/mp3" />
+        </audio>
         <h3>React</h3>
         
         </div>
@@ -202,25 +245,19 @@
 
    </section>
 
-   <section id="portfolio" class="section-bg-mt-5-">
+
+   <section class="section-bg-mt-5-" id="portfolio">
     <div class="container pb-5 pt-5 bg-transparent">
    
          <h2 class="pb-4">Portfólio</h2>
- 
-         <div id="carouselPortfolio" class="carousel carousel-dark slide" data-bs-ride="carousel">
- 
-             <div class="carousel-indicators">
- 
-                 <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active"
-                     aria-current="true" aria-label="Slide 1"></button>
- 
-                 <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1"
-                     aria-label="Slide 2"></button>
-             </div>
 
+                                          
 <div class="carousel-inner">
 <div class="carousel-item active">
 <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+                                           <!-- Projeto 1 -->
 <div class="col">
 <div class="card">
 <img src="img/Login Screen.png" class="card-img-top" alt="Google Glass">
@@ -236,12 +273,11 @@
                                     
       <abbr title="Hospedagem do Projeto"><a href="https://periclesdev-login-screen-christmas.netlify.app/" target='_blank'
       class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a></abbr>
+  </div>
+  </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-
-
+                                           <!-- Projeto 2 -->
 <div class="col">
 <div class="card">
 <img src="img/JelynBurguer.png" class="card-img-top img-fluid w-100"
@@ -261,7 +297,7 @@ alt="JelynBurguer - Lanchonete">
 </div>
 </div>
 </div>
-
+                                           <!-- Projeto 3 -->
 <div class="col">
 <div class="card">
 <img src="img/Axolotl-image.png" class="card-img-top img-fluid w-100"alt="Blog de notícias - Axolote">
@@ -278,146 +314,21 @@ alt="JelynBurguer - Lanchonete">
       class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a></abbr>
 </div>
 </div>
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge" />
 </div>                              
 </div>
-
-
-
-<div class="carousel-inner">
-<div class="carousel-item active">    
-<div class="row row-cols-1 row-cols-md-3 g-4">      
-<div class="col">
-        
-<div class="card">
-<img src="img/Tenis.png" class="card-img-top" alt="Google Glass">
-        
-<div class="card-body">
-<h5 class="card-title">Sneakers</h5>
-<p class="card-text">Rotação de tênis que manipula imagens e estiliza sua propriedade em diferentes modelos.</p>
-        
-<div class="d-flex justify-content-center">      
-      <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Tenis-E-commerce"target='_blank'
-      class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
-                                              
-</div>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card">
-<img src="img/Parallax.png" class="card-img-top img-fluid w-100"
-alt="E-Commerce Hamburgueria">
-
-<div class="card-body">
-<h5 class="card-title">Scroll Parallax</h5>
-<p class="card-text">Rolagem animada em javascript do conteudo da pagina com tematica Halloween.</p>
-
-<div class="d-flex justify-content-center">
-      <abbr title="Repositório do Projeto"><a href="https://github.com/codethi/blogPessoal-front-back"
-      target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
-
-</div>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card">
-<img src="img/Card.png" class="card-img-top img-fluid w-100" alt="Badges de emblemas feito com Cores Gradient">
-
-<div class="card-body">
-<h5 class="card-title">Badges</h5>
-<p class="card-text">Emblemas de honra em coloração CSS Gradient-Puro. </p>
-
-<div class="d-flex justify-content-center">
-      <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Flag-degrade" target='_blank'
-      class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
-
-</div>
-</div>
-</div>                              
-</div>
-
-
-
- <div class="carousel-inner">
-<div class="carousel-item active">              
-<div class="row row-cols-1 row-cols-md-3 g-4">
-<div class="col">              
-<div class="card">              
-<img src="img/Calendário.png" class="card-img-top" alt="Projeto Calendário anual">
-                
-<div class="card-body">               
-<h5 class="card-title">Calendar with Glassmorphism</h5>              
-<p class="card-text">Calendário semanal/mês de estilo vidro em caixa com design moderno.</p>
-                
-<div class="d-flex justify-content-center">
-                
-      <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Calendario"target='_blank'
-      class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
-                                                      
-</div>
-</div>
-</div>
-</div>
-
-
- <div class="col">
- <div class="card">
-<img src="img/Calculadora.png" class="card-img-top img-fluid w-100" alt="Calculadora de valores numericos">
-
-<div class="card-body">
-<h5 class="card-title">Calculator</h5>
-<p class="card-text">Calculadora de valores numéricos simples e intuitiva.</p>
-
-
-<div class="d-flex justify-content-center">
-
-      <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Calculadora"
-      target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
-
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="col">
-<div class="card">
-<img src="img/dsMovie.png" class="card-img-top img-fluid w-100" alt="Projeto catalogo de filmes desenvolvido em uma maratona">
-
-<div class="card-body">
-<h5 class="card-title">DsMovie</h5>
-<p class="card-text">Desenvolvimento e Implantação de um site estático que colhe informações de uma API online
-de filmes.</p>
-
-
-<div class="d-flex justify-content-center">
-
-      <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/dsMovie" target='_blank'
-      class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
-
-      <abbr title="Hospedagem do Projeto"><a href="https://periclesdev.github.io/dsMovie/" target='_blank'
-      class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a></abbr>
-</div>
-</div>
-</div>                              
-</div>
-
+                                           <!-- Projeto 4 --> 
 <div class="col">
   <div class="card">
- <img src="img/FormFront.png" class="card-img-top img-fluid w-100" alt="Formulário de Inscrição e Login">
+ <img src="img/DiscordScreen.png" class="card-img-top img-fluid w-100" alt="Formulário de Inscrição e Login">
  
  <div class="card-body">
- <h5 class="card-title">Responsive Registration Form</h5>
- <p class="card-text">Formulário responsivo de Cadastro com integração de Login.</p>
+ <h5 class="card-title">DiscordScreen</h5>
+ <p class="card-text">Formulário do Discord com validação.</p>
  
  
  <div class="d-flex justify-content-center">
  
-       <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Registration-Form"
+       <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Discord-Screen"
        target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
  
        <abbr title="Hospadagem do Projeto"><a href="https://responsive-registration-form.netlify.app/" target='_blank'
@@ -426,10 +337,9 @@ de filmes.</p>
  </div>
  </div>
  </div>
- 
- 
- <div class="col">
- <div class="card">
+                                           <!-- Projeto 5 -->
+  <div class="col">
+  <div class="card">
  <img src="img/Next Level Week.png" class="card-img-top img-fluid w-100" alt="Projeto NLW-eSports em parceira da Rocketseat">
  
  <div class="card-body">
@@ -441,38 +351,15 @@ de filmes.</p>
  
        <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/NLW-eSports-Rocketseat" target='_blank'
        class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
- 
-       <abbr title="Hospedagem do Projeto"><a href="https://periclesdev.github.io/NLW-eSports-Rocketseat/" target='_blank'
+       <abbr title="Hospedagem do Projeto"><a href="https://periclesdev.github.io/NLW-Explorer-Rocketseat/" target='_blank'
        class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a></abbr>
 </div>
 </div>
 </div>                              
 </div>
 
-<div class="col">
-  <div class="card">
-  <img src="img/LampadaJs.png" class="card-img-top img-fluid w-100" alt="Projeto de um Lampada manipulada no JS pra acender/apagar/quebrar">
-  
-  <div class="card-body">
-  <h5 class="card-title">NLW - Rocketseat</h5>
-  <p class="card-text">Next Level Week | Desenvolvido na plataforma da Rocketseat.</p>
-  
-  
-  <div class="d-flex justify-content-center">
-  
-        <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Lampada.js" target='_blank'
-        class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+</main> 
 
- </div>
- </div>
- </div>                              
- </div>
-
-</main>
-  
-             <!--Biblioteca do JavaScript-->
-<script src="https://unpkg.com/scrollreveal"></script>         
-<script src="javascript.js"></script>
-      
+<script src="javascript.js"></script>     
 </body>
 </html>

@@ -21,8 +21,7 @@ html, body {
     z-index: 9997;
 }
 #header .profile img {
-    width: 180px;
-      
+    width: 180px;   
 }
  #header .profile h1{  
      font-size: 24px;
@@ -78,7 +77,7 @@ section#inicio{
     background-attachment: fixed;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 100vh; 
 }
 section#inicio h2{
   font-size: 4rem;
@@ -90,8 +89,26 @@ section#inicio span#subtitle{
     text-shadow: 4px 4px 10px #000000;
 }
 
+button.botao{ /* Download curriculo */
+ font-size: 35px;
+ background: #bacdda;
+ border-radius: 50px;
+ cursor: pointer;
+}
+button.botao a{
+    text-decoration: none;
+    font-style: #161623; 
+}
+
+     /* Começo de área "Sobre" */
+
 section#sobre h1 {
     text-align: center;
+}
+section#sobre img {
+    border: 5px solid #8E5D52;
+    background: #8E5D52;
+    padding: 5px;
 }
 
       /* Começo de área "Habilidades" */
@@ -267,7 +284,6 @@ i.menu-mobile {
    }
 }
 
-
 @media(max-width: 390px) {
 
     section#inicio {
@@ -278,6 +294,28 @@ i.menu-mobile {
     background-position: center;
     width: 100%;
     height: 100vh;
-       
-    }
 }
+}
+
+/* Animação */
+
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+   }
+   [data-anime="down"] {
+    transform: translate3d(0, -100%, 0);
+   }
+   [data-anime="up"] {
+       transform: translate3d(0, 100%, 0);
+   }
+   [data-anime="left"] {
+       transform: translate3d(-100%, 0, 0);
+   }
+   [data-anime="right"] {
+       transform: translate3d(50px ,0 ,0);
+   }
+   [data-anime].animate {
+       opacity: 1;
+       transform: translate3d(0 ,0 ,0);
+   }
