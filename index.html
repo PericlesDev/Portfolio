@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,14 +12,15 @@
     <title>Péricles dos Santos</title>
 
 </head>
-
+<script src="javascript.js" defer></script>
 <body>
                         <i class="bi bi-list menu-mobile"></i>
                    <!--Menu lateral do meu Cabeçalho de Navegação-->
 
 <aside id='header'>
 <section class="profile">
-<img src="img/Violinista.png" hspace="49px" alt="Foto do Péricles">
+<img src="img/icons8-dev.svg" hspace="80px" alt="Foto do Péricles">
+
 <h1>Péricles dos Santos</h1>
 
 <div class="social-links mt-4 text-center">
@@ -36,51 +38,31 @@
     <ul class="nav flex-column">
     <li class="nav-item">
         <a class="nav-link" aria-current="page" aria-current="page"
-        href="#inicio"><i class="bi bi-house-fill" aria-hidden="true"></i><div onclick="document.getElementById('player').play()">Inicio</div> 
-        <audio id="player">
-          <source src="audios/Inicio.mp3" type="audio/mp3" />
-        </audio>
-      
+        href="#inicio"><i class="bi bi-house-fill" aria-hidden="true"></i><div>Inicio</div> 
       </a>
       </li>
 
         <li class="nav-item">
         <a class="nav-link" href="#sobre"><i class="bi bi-person-fill"
-        aria-hidden="true"></i><div onclick="document.getElementById('player2').play()">Sobre</div> 
-        <audio id="player2">
-          <source src="audios/Sobre.mp3" type="audio/mp3" />
-        </audio>
-      
+        aria-hidden="true"></i><div>Sobre</div> 
       </a>
       </li>
 
         <li class="nav-item">
         <a class="nav-link" href="#habilidades"><i class="bi bi-list-check"
-        aria-hidden="true"></i><div onclick="document.getElementById('player3').play()">Habilidades</div> 
-        <audio id="player3">
-          <source src="audios/Habilidades.mp3" type="audio/mp3" />
-        </audio>
-    
+        aria-hidden="true"></i><div>Habilidades</div> 
       </a>
       </li>
 
         <li class="nav-item">
         <a class="nav-link" href="#curriculo"><i class="bi bi-file-earmark"
-        aria-hidden="true"></i><div onclick="document.getElementById('player4').play()">Currículo</div> 
-        <audio id="player4">
-          <source src="audios/Currículo.mp3" type="audio/mp3" />
-        </audio>
-      
+        aria-hidden="true"></i><div>Currículo</div> 
       </a>
       </li>
 
         <li class="nav-item">
         <a class="nav-link" href="#portfolio"><i class="bi bi-collection"
-        aria-hidden="true"></i><div onclick="document.getElementById('player5').play()">Portfólio</div> 
-        <audio id="player5">
-          <source src="audios/Portfólio.mp3" type="audio/mp3" />
-        </audio>
- 
+        aria-hidden="true"></i><div>Portfólio</div> 
       </a>
       </li>
 
@@ -94,8 +76,9 @@
     
     <section id="inicio" class="row m-0 p-0">
     <div class="col-md-5 d-flex justify-content-center align-items-center flex-column">
-      <h2 class="text-white text-shadow">Péricles Santos</h2>
-        <span id="subtitle" class="text-white text-shadow">Desenvolvedor Web Front-end</span>
+      <h2 class="text-white text-shadow">Desenvolvedor<br></h2>
+      <h2 class="text-white text-shadow"><span>Front-end</span></h2>
+        <!-- <span id="subtitle" class="text-white text-shadow">Desenvolvedor Web Front-end</span> -->
     </div>     
     </section>
 
@@ -131,49 +114,45 @@
         <div class="card">
         <div class="content">
         <h2><img src="https://img.icons8.com/color/95/000000/html-5--v1.png"/></h2>
-        <button onclick="document.getElementById('player6').play()">Clique aqui</button>
-        <audio id="player6">
-          <source src="audios/HTML5.mp3" type="audio/mp3" />
-        </audio>
         <h3>HTML5</h3>
-        
-        </p>
         </div>
       </div>
+
       <div class="card">
         <div class="content">
         <h2><img src="https://img.icons8.com/color/95/000000/css3.png"/></h2>
-        <button onclick="document.getElementById('player7').play()">Clique aqui</button>
-        <audio id="player7">
-        <source src="audios/CSS3.mp3" type="audio/mp3" />
-        </audio>
-        <h3>CSS3</h3>
-      
+        <h3>CSS3</h3>     
         </div>
       </div>
+
       <div class="card">
         <div class="content">
         <h2><img src="https://img.icons8.com/ios-filled/100/f1c40f/javascript-logo.png"/></h2>
-        <button onclick="document.getElementById('player8').play()">Clique aqui</button>
-        <audio id="player8">
-        <source src="audios/JavaScript.mp3" type="audio/mp3" />
-        </audio>
-        <h3>Javascript</h3>
-        
+        <h3>Javascript</h3>       
         </div>
       </div>
+
       <div class="card">
         <div class="content">
         <h2><img src="https://img.icons8.com/office/100/000000/react.png"/></h2>
-        <button onclick="document.getElementById('player9').play()">Clique aqui</button>
-        <audio id="player9">
-        <source src="audios/ReactJS.mp3" type="audio/mp3" />
-        </audio>
-        <h3>React</h3>
-        
+        <h3>React</h3>        
         </div>
       </div>
     
+      <div class="card">
+        <div class="content">
+        <h2><img width="130" height="130" src="https://img.icons8.com/color/48/bootstrap.png" class="icon" alt="bootstrap"/></h2>
+        <h3>Bootstrap</h3>     
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="content">
+        <h2><img width="120" height="120" src="https://img.icons8.com/color/65/github.png" class="icon"/></h2>
+        <h3>Git / Github</h3>     
+        </div>
+      </div>
+
     </div>
 
   </section>
@@ -190,23 +169,28 @@
 
             <div class='cv-item'>
             <h4>Bootcamp Full-Stack Web.Developer</h4>
-            <h5>Abril - Junho - 2022</h5>
+            <h5>Abril - 2022</h5>
             <p><em>Digital Innovation One | Carrefour</em></p>
-            <p>Praticando em uma plataforma gamificada em parceria com empresas de todo o mundo.</p>
+            <p><strong><li>Progressive Web Application</li></strong><br>
+              <p>Projeto Base: Desenvolvendo uma PWA com React para Mapear os Dados do COVID19 Pelo Mundo.</p>
             </div>
 
             <div class='cv-item'>
               <h4>Semana Spring React</h4>
               <h5>Abril - 2022</h5>
-              <p><em>DevSuperior</em></p>
-              <p>Desenvolvendo e hospedando uma API de filmes online.</p>
+              <p><em>DevSuperior | Professor: Nélio Alves</em></p>
+              <p><strong><li>API - Catálogo de filmes</li></strong><br>
+              <p>Aplicação feita utilizando API do The Movie Database para avaliar com estrelas os filmes em catálogo.</p>
               </div>
 
             <div class='cv-item'>
               <h4>Trilha: Conectar</h4>
               <h5>Maio - 2022</h5>
               <p><em>RocketSeat</em></p>
-              <p>Fundamentos da programação e redes de computadores.</p>
+              <p><strong><li>Redes de computadores</li></strong></p>
+              <p>Módulo teórico dos protocolos de requisição na internet: URL, HTTP, TCP, IP, e proxy.</p>
+              <strong><li>Fundamentos da programação.</li></strong>
+              <p>Lógica de programação,pensamento computacional, algoritmo e manipulação de dados.</p>
               </div>
 
             </div>
@@ -215,11 +199,12 @@
             
 
             <div class='cv-item'>
-              <h4>Carrefour Web Developer</h4>
+              <h4>Bootcamp Full-Stack Web.Developer</h4>
               <h5>Junho - 2022</h5>
               <p><em>Carga horária: 104 horas</em></p>
+              <p>Link: <a href="https://www.dio.me/certificate/8521F69C/share" target="_blank">https://www.dio.me/certificate/8521F69C/share</a></p>
               <p>Desenvolvi projetos pensando em integrar ao meu portfólio seguindo uma lógica de código limpo
-              e acessível ao cliente. Assim, tive uma base sólida de um processo diário de um Desenvolvedor Web.
+              e acessível ao cliente. Assim, tive uma base sólida do processo diário de um Web Desenvolvedor Front-end.
             </p>
               </div>
 
@@ -227,14 +212,15 @@
               <h4>Semana Spring React</h4>
               <h5>Abril - 2022</h5>
               <p><em>carga horária: 16 horas</em></p>
+              <p>Link: <a href="https://learn.devsuperior.com/certificados/2428759" target="_blank">https://learn.devsuperior.com/certificados/2428759</a></p>
               <p>desenvolvido um web site estático com HTML e CSS.</p>
               </div>
 
             <div class='cv-item'>
-              <h4>Trilha Conectar do Discover</h4>
+              <h4>Trilha Conectar</h4>
               <h5>Junho 2022</h5>
               <p><em>Carga horária: 2 horas e 23 minutos</em></p>
-              <p>Estudei Lógica de Programação no seu nivel mais teórico, e passei a fixar toda metodologia do curso para aplicar em meus projetos.</p>
+              <p><img src="./img/Discover.png" width="400px" /></p>
               </div>
 
 
@@ -260,11 +246,11 @@
                                            <!-- Projeto 1 -->
 <div class="col">
 <div class="card">
-<img src="img/Login Screen.png" class="card-img-top" alt="Google Glass">
+<img src="img/Login Screen.png" class="card-img-top" alt="Login Screen Christimas">
 
 <div class="card-body">
 <h5 class="card-title">Login Screen Christmas</h5>
-<p class="card-text">Tela de login na tematica de Natal. Desenvolvido em HTML5 e CSS3.</p>
+<p class="card-text">Tela de login neon na tematica natalina. <br><strong>Tecnologias:</strong> HTML5 e CSS3.</p>
 
 <div class="d-flex justify-content-center">
 
@@ -284,8 +270,8 @@
 alt="JelynBurguer - Lanchonete">
 
 <div class="card-body">
-<h5 class="card-title">E-commerce Hamburgueria</h5>
-<p class="card-text">Landing page da lanchonete <strong>JelynBurguer</strong>. Projetado em HTML5, CSS3, e JavaScript.</p>
+<h5 class="card-title">E-commerce Hamburguer</h5>
+<p class="card-text">Landing page da lanchonete.<br><strong>Tecnologias:</strong> HTML5, CSS3, e JavaScript</p>
 
 <div class="d-flex justify-content-center">
        <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Hamburgueria"
@@ -300,17 +286,17 @@ alt="JelynBurguer - Lanchonete">
                                            <!-- Projeto 3 -->
 <div class="col">
 <div class="card">
-<img src="img/Axolotl-image.png" class="card-img-top img-fluid w-100"alt="Blog de notícias - Axolote">
+<img src="img/Axolotl-Website.png" class="card-img-top img-fluid w-100"alt="Blog de notícias - Axolote">
 
 <div class="card-body">
 <h5 class="card-title">Axolotl News Blog</h5>
-<p class="card-text">Blog de noticias sobre o Ambystoma mexicanum(Axolote).</p>
+<p class="card-text">Blog de noticias sobre o Ambystoma mexicanum(Axolote).<br><strong>Tecnologias:</strong> HTML5, CSS3, e JavaScript</p>
 
 <div class="d-flex justify-content-center">
       <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Axolotl" target='_blank'
       class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
 
-      <abbr title="Hospedagem do Projeto"><a href="#" target='_blank'
+      <abbr title="Hospedagem do Projeto"><a href="https://axolotl-website.netlify.app/" target='_blank'
       class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a></abbr>
 </div>
 </div>
@@ -319,19 +305,18 @@ alt="JelynBurguer - Lanchonete">
                                            <!-- Projeto 4 --> 
 <div class="col">
   <div class="card">
- <img src="img/DiscordScreen.png" class="card-img-top img-fluid w-100" alt="Formulário de Inscrição e Login">
+ <img src="img/Pokedex.gif" class="card-img-top img-fluid w-100" alt="Pokedex Pokemon">
  
  <div class="card-body">
- <h5 class="card-title">DiscordScreen</h5>
- <p class="card-text">Formulário do Discord com validação.</p>
+ <h5 class="card-title">Pokedex Pokemon</h5>
+ <p class="card-text">Consumindo e exibindo os dados da API Pokemon <br><strong>Tecnologias:</strong> HTML5, CSS3, e JavaScript</p>
  
  
  <div class="d-flex justify-content-center">
  
-       <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Discord-Screen"
-       target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+       <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Pokedex" target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
  
-       <abbr title="Hospadagem do Projeto"><a href="https://responsive-registration-form.netlify.app/" target='_blank'
+       <abbr title="Hospadagem do Projeto"><a href="https://pokemon-api-pokedex.netlify.app/" target='_blank'
        class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a></abbr>
  </div>
  </div>
@@ -344,7 +329,7 @@ alt="JelynBurguer - Lanchonete">
  
  <div class="card-body">
  <h5 class="card-title">NLW - Rocketseat</h5>
- <p class="card-text">Next Level Week | Desenvolvido na plataforma da Rocketseat.</p>
+ <p class="card-text">Next Level Week | Desenvolvido na plataforma da Rocketseat. <br><strong>Tecnologias:</strong> HTML5, CSS3</p>
  
  
  <div class="d-flex justify-content-center">
@@ -358,8 +343,92 @@ alt="JelynBurguer - Lanchonete">
 </div>                              
 </div>
 
-</main> 
+                                         <!-- Projeto 6 -->
 
-<script src="javascript.js"></script>     
+<div class="col">
+  <div class="card">
+  <img src="img/DsMovie.png" class="card-img-top img-fluid w-100"
+  alt="JelynBurguer - Lanchonete">
+  
+  <div class="card-body">
+  <h5 class="card-title">DSmovie - movie catalog</h5>
+  <p class="card-text">Implantação de uma API de catálogo de filmes. <br><strong>Tecnologias:</strong> HTML5, CSS3, e Boostrap</p>
+  
+  <div class="d-flex justify-content-center">
+         <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/dsMovie"
+         target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+  
+         <abbr title="Hospedagem do Projeto"><a href="https://periclesdev.github.io/dsMovie/" target='_blank'
+        class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a></abbr>
+  </div>
+  </div>
+  </div>
+  </div>
+
+                                          <!-- Projeto 7 -->
+
+  <div class="col">
+    <div class="card">
+    <img src="img/LampadaJs.png" class="card-img-top img-fluid w-100"
+    alt="JelynBurguer - Lanchonete">
+    
+    <div class="card-body">
+    <h5 class="card-title">The functions of the lamp</h5>
+    <p class="card-text">Interagindo com estruturas de controle. <br><strong>Tecnologias:</strong> HTML5, CSS3, e JavaScript</p>
+    
+    <div class="d-flex justify-content-center">
+           <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/Lampada.js"
+           target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+    
+           <abbr title="Hospedagem do Projeto"><a href="https://the-functions-of-the-lamp.netlify.app/" target='_blank'
+          class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a></abbr>
+    </div>
+    </div>
+    </div>
+    </div>
+
+                                              <!-- Projeto 8 -->
+
+    <div class="col">
+      <div class="card">
+      <img src="img/Studio-Ghibli.png" class="card-img-top img-fluid w-100"
+      alt="Studio Ghibli - SPA">
+      
+      <div class="card-body">
+      <h5 class="card-title">SPA - Single Page Application</h5>
+      <p class="card-text">Landing page das animações japonesas do Studio-Ghibli. <br><strong>Tecnologias:</strong> HTML5, CSS3, e Reactjs</strong></p>
+      
+      <div class="d-flex justify-content-center">
+             <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/SPA-React"
+             target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+      
+             <abbr title="Hospedagem do Projeto"><a href="https://spa-studio-ghibli.netlify.app/" target='_blank'
+            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a></abbr>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+        <img src="img/CEP.png" class="card-img-top img-fluid w-100"
+        alt="API - ViaCEP">
+        
+        <div class="card-body">
+        <h5 class="card-title">API - ViaCEP</h5>
+        <p class="card-text">Consultando <strong>API-ViaCEP</strong> , e retornando dados no autocomplet. <br><strong>Tecnologias:</strong> HTML5, CSS3, e JavaScript</p>
+        
+        <div class="d-flex justify-content-center">
+               <abbr title="Repositório do Projeto"><a href="https://github.com/PericlesDev/CEP-API"
+               target='_blank' class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a></abbr>
+        
+               <abbr title="Hospedagem do Projeto"><a href="https://api-via-cep.netlify.app/" target='_blank'
+              class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a></abbr>
+        </div>
+        </div>
+        </div>
+        </div>
+
+</main> 
 </body>
 </html>
